@@ -125,7 +125,7 @@ async function customersFn() {
       createdAt: new Date(),
     }));
     await client.db('47Database').collection('customers').insertMany(originalCustomers);
-  }, 2000);
+  }, 200);
 };
 
 function generateAnonymizedString(originalString: string) {
